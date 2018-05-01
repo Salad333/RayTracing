@@ -1,0 +1,85 @@
+﻿Build started 2017/5/29 17:05:21.
+     1>Project "C:\Users\HongyuYang\Desktop\pro\test3\test3\test3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\vs\install\VC\bin\CL.exe /c /I"D:\vs\SDL-devel-1.2.15-VC\SDL-1.2.15\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _USING_V110_SDK71_ /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(265): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+                 c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(315) : see reference to function template instantiation 'void render<float>(const Scene<float> &,SDL_Surface *)' being compiled
+     1>c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(212): warning C4305: 'argument' : truncation from 'double' to 'const float'
+                 c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(282) : see reference to function template instantiation 'Vec<T,3> trace<T>(const Ray<T> &,const Scene<T> &,int)' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(315) : see reference to function template instantiation 'void render<float>(const Scene<float> &,SDL_Surface *)' being compiled
+     1>c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(231): warning C4305: 'argument' : truncation from 'double' to 'const float'
+     1>c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(249): warning C4305: 'argument' : truncation from 'double' to 'const float'
+     1>d:\vs\install\vc\include\xutility(2170): warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+                 d:\vs\install\vc\include\xutility(2181) : see reference to function template instantiation '_OutIt std::_Copy_n<_InIt,_Diff,_OutIt>(_InIt,_Diff,_OutIt,std::forward_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=int *
+         ,            _InIt=const float *
+         ,            _Diff=size_t
+                 ]
+                 d:\vs\install\vc\include\xutility(2201) : see reference to function template instantiation '_OutIt std::_Copy_n<_InIt,_Diff,_OutIt>(_InIt,_Diff,_OutIt,std::_Nonscalar_ptr_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=int *
+         ,            _InIt=const float *
+         ,            _Diff=size_t
+                 ]
+                 d:\vs\install\vc\include\xutility(2238) : see reference to function template instantiation '_OutIt std::_Copy_n<_InIt,_Diff,int*>(_InIt,_Diff,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=int *
+         ,            _InIt=const float *
+         ,            _Diff=size_t
+                 ]
+                 d:\vs\install\vc\include\xutility(2261) : see reference to function template instantiation '_OutIt std::_Copy_n2<const float*,_Diff,_OutIt>(_InIt,_Diff,_OutIt,std::random_access_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=std::_Array_iterator<int,3>
+         ,            _Diff=size_t
+         ,            _InIt=const float *
+                 ]
+                 d:\vs\install\vc\include\xutility(2271) : see reference to function template instantiation '_OutIt std::_Copy_n1<_InIt,_Diff,_OutIt>(_InIt,_Diff,_OutIt,std::random_access_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=std::_Array_iterator<int,3>
+         ,            _InIt=std::_Array_const_iterator<float,3>
+         ,            _Diff=size_t
+                 ]
+                 d:\vs\install\vc\include\xutility(2297) : see reference to function template instantiation '_OutIt std::_Copy_n<_InIt,_Diff,_OutIt>(_InIt,_Diff,_OutIt,std::true_type)' being compiled
+                 with
+                 [
+                     _OutIt=std::_Array_iterator<int,3>
+         ,            _InIt=std::_Array_const_iterator<float,3>
+         ,            _Diff=size_t
+                 ]
+                 c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(23) : see reference to function template instantiation '_OutIt std::copy_n<std::_Array_const_iterator<_Ty,3>,size_t,std::_Array_iterator<int,3>>(_InIt,_Diff,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=std::_Array_iterator<int,3>
+         ,            _Ty=float
+         ,            _InIt=std::_Array_const_iterator<float,3>
+         ,            _Diff=size_t
+                 ]
+                 c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(287) : see reference to function template instantiation 'Vec<int,3>::Vec<T>(const Vec<T,3> &)' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\hongyuyang\desktop\pro\test3\test3\source.cpp(287) : see reference to function template instantiation 'Vec<int,3>::Vec<T>(const Vec<T,3> &)' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+       Link:
+         D:\vs\install\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\HongyuYang\Desktop\pro\test3\Debug\test3.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\vs\SDL-devel-1.2.15-VC\SDL-1.2.15\lib\x86" SDL.lib SDLmain.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\HongyuYang\Desktop\pro\test3\Debug\test3.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\HongyuYang\Desktop\pro\test3\Debug\test3.lib" /MACHINE:X86 Debug\Source.obj
+         test3.vcxproj -> C:\Users\HongyuYang\Desktop\pro\test3\Debug\test3.exe
+     1>Done Building Project "C:\Users\HongyuYang\Desktop\pro\test3\test3\test3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.49
