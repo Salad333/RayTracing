@@ -10,3 +10,5 @@ RayTracing
 ![](https://github.com/Salad333/RayTracing/blob/master/3.jpg)
 
 Maya Model
+
+![](https://github.com/Salad333/RayTracing/blob/master/MayaScreenshot/%E5%85%A8%E6%99%AF.png)
