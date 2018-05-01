@@ -6,6 +6,7 @@ Maya modeling now is very popular used in the 3D animation production. Ray Traci
 
 
 RayTracing
+
 ![](https://github.com/Salad333/RayTracing/blob/master/3.jpg)
 
 Maya Model
